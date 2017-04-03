@@ -1,0 +1,34 @@
+{
+  "name": "karel-web",
+  "version": "1.0.0",
+  "description": "Source code of Karel Simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarelRobot/karel-web.git"
+  },
+  "keywords": [
+    "karel",
+    "karel-robot",
+    "typescript",
+    "javascript",
+    "webpack"
+  ],
+  "author": "Joymon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarelRobot/karel-web/issues"
+  },
+  "homepage": "https://github.com/KarelRobot/karel-web#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.12",
+    "copy-webpack-plugin": "^4.0.1",
+    "jquery": "^3.2.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.3"
+  }
+}

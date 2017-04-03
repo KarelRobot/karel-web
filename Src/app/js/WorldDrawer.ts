@@ -1,7 +1,8 @@
-﻿class WorldDrawer {
-    private world: World;
+﻿import World=require('./world');
+export class WorldDrawer {
+    private world: World.World;
     private context: CanvasRenderingContext2D;
-    constructor(world: World, canvas: HTMLCanvasElement) {
+    constructor(world: World.World, canvas: HTMLCanvasElement) {
         this.world = world;
         this.context = canvas.getContext("2d");
     }

@@ -1,9 +1,12 @@
-﻿class KarelDrawer {
-    private karel: Karel;
+﻿import KarelMod =require('./karel');
+import EntitiesMod = require('./Entities');
+var Direction = EntitiesMod.Direction;
+export class KarelDrawer {
+    private karel: KarelMod.Karel;
     private smallCircleRadius: number = 2;
     private largeCircleRadius: number = 5;
     private context: CanvasRenderingContext2D;
-    constructor(karel: Karel, canvas: HTMLCanvasElement) {
+    constructor(karel: KarelMod.Karel, canvas: HTMLCanvasElement) {
         this.karel = karel;
         this.context = canvas.getContext("2d");
     }

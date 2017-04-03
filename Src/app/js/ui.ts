@@ -1,19 +1,20 @@
-/// <reference path="karel.ts" />
-/// <reference path="world.ts" />
-/// <reference path="WorldDrawer.ts" />
-/// <reference path="../scripts/typings/jquery/jquery.d.ts" />
 "use strict";
-var karel: Karel;
-var karelDrawer: KarelDrawer;
-var world: World;
-var worldDrawer: WorldDrawer;
+import World=require('./world');
+import WorldDrawer =require('./WorldDrawer'); 
+import Karel =require('./karel');
+import KarelDrawerMod = require('./KarelDrawer');
+var worldDrawer: WorldDrawer.WorldDrawer;
+import $ = require('jquery');
+var karel: Karel.Karel;
+var karelDrawer: KarelDrawerMod.KarelDrawer;
+
 $(document).ready(function () {
     var canvas = <HTMLCanvasElement>document.getElementById("world");
-    world = new World();
-    worldDrawer = new WorldDrawer(world, canvas);
+    var world = new World.World();
+    worldDrawer = new WorldDrawer.WorldDrawer(world, canvas);
     worldDrawer.draw();
-    karel = new Karel(world);
-    karelDrawer = new KarelDrawer(karel, canvas);
+    karel = new Karel.Karel(world);
+    karelDrawer = new KarelDrawerMod.KarelDrawer(karel, canvas);
     karelDrawer.draw();
     loadAndSetStoredProgramsIfAny();
 });
@@ -40,15 +41,20 @@ class KarelProgram {
 }
 function loadAndSetStoredProgramsIfAny() {
     var programs: Array<KarelProgram> = getStoredPrograms();
+    
     $("#codeArea").text(programs[0].code);
 }
 function getStoredPrograms(): Array<KarelProgram> {
     var programs: Array<KarelProgram> = JSON.parse(localStorage.getItem("KarelPrograms") || "[]");
     if (!programs) {
-        return [];
+        return [getDefaultProgram()];
     } else {
+        if(programs.length ===0) programs.push(getDefaultProgram());
         return programs;
     }
+}
+function getDefaultProgram():KarelProgram {
+    return {name:"",code:""};
 }
 function saveProgram(program: string) {
     var programs: Array<KarelProgram> = [];

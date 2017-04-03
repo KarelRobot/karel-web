@@ -1,6 +1,6 @@
 /// <reference path="boardsize.ts" />
 
-class World {
+export class World {
     context: CanvasRenderingContext2D;
      boardWidth: number;
      boardHeight: number;
