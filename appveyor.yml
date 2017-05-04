@@ -1,0 +1,44 @@
+# environment variables
+environment:
+  nodejs_version: "6"
+  access_token:
+    secure: YwffwDvba/ADlMJbtnOM7cKUqudcbYCt2K74HOtBvscwylmIMSRmrX2VKc+fuNjN
+# scripts that run after cloning repository
+install:
+  # install node 
+  - ps: Install-Product node $Env:nodejs_version
+  - npm install -g npm
+  - npm install -g webpack  
+  
+# scripts to run before build
+# Post-install test scripts.
+test_script:
+  # install node modules
+  - cd %APPVEYOR_BUILD_FOLDER%
+  - npm install
+  # run webpack with production flag
+  - webpack -p
+
+skip_commits:
+  message: /\[skip ci\]/
+  
+artifacts:
+  - path: dist
+on_success:
+  - git config --global credential.helper store
+  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - git config --global user.email "joymon@gmail.com"
+  - git config --global user.name "joymon"
+  - git checkout master
+  - rd /s /q docs
+  - ps: New-Item -ItemType Directory -Force docs
+  - ps: Copy-Item dist\* docs -recurse
+  - dir docs
+  - git status
+  - git add docs
+  - git status
+  - git commit -m "[skip ci]" -- docs 
+  - git status
+  - git push origin master 
+# Don't actually build.
+build: off
