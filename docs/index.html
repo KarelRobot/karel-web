@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>HTML5 Online Karel Simulator</title>
+    <link rel="stylesheet" href="combined.min.css">
+    <meta property="og:title" content="HTML5 Online Karel Simulator">
+    <meta property="og:description" content="This HTML5 and Javascript based Online Karel Simulator is intended to simulate the Karel programming language which is targetted to non programmers.This is really helpful in understanding the basic concepts of prorgamming. This is written in TypeScript language.">
+    <meta name="description" content="This HTML5 and Javascript based Online Karel Simulator is intended to simulate the Karel programming language which is targetted to non programmers.This is really helpful in understanding the basic concepts of prorgamming. This is written in TypeScript language.">
+</head>
+<body>
+    <noscript>
+        &lt;h2&gt; This HTML 5 & TypeScript based online Karel programming language simulator
+        needs javascript to be enabled as we are learning the programming by executing JavaScript.
+        language.. <br/>
+        This Karel simulator is written in TypeScript.
+    </noscript>
+    <header style="overflow:hidden">
+        <section style="float:left">
+            <h1>
+                HTML5 & Javascript based Karel simulator
+            </h1>
+            <h4>This Karel simulator is written in TypeScript.</h4>
+        </section>
+        <a href="https://github.com/joymon/Karel-TypeScript" style="float: right">
+            <img src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+                 alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+        </a>
+        
+    </header>
+    <div style="overflow: hidden;" class="not-selectable" unselectable="on">
+       
+        <section style="float: left; width: 40%">
+            <header>
+                <h2>
+                    Karel's world</h2>
+            </header>
+            <article>
+            <canvas id="world" style="border-style: solid; border-width: 2px; border-color: inherit;" width="300" height="300" >
+            <p>Please try loading this page in HTML5 enabled web browsers. All the latest versions of famous browsers such as Internet explorer, Chrome, Firefox, Opera support HTML5.</p>
+            </canvas>
+            </article>
+        </section>
+        <section style="float: left; width: 58%">
+            <header>
+                <h2>
+                    Your program to control Karel</h2>
+            </header>
+            <article>
+            <textarea id="codeArea" name="code" rows="10" style="width: 100%;height:300px"></textarea>
+            </article>
+        </section>
+    </div>
+    <div class="not-selectable" unselectable="on" style="overflow: hidden; width: 100%;">
+        <span class="button not-selectable" title="Reset the code of this lesson" unselectable="on"
+            id="draw-button">Draw</span> <span class="button not-selectable" title="Reset the code of this lesson"
+                unselectable="on" id="move-button">move();</span> <span class="button not-selectable"
+                    title="Reset the code of this lesson" unselectable="on" id="turnLeft-button">turnLeft();</span>
+        <div style="float: right;">
+            <span id="lesson-number" style="display: none;">Lesson 1</span> <span class="button not-selectable"
+                title="Go back one lesson" style="margin-right: 10px;" unselectable="on" id="back-button">
+                Run program</span>
+        </div>
+    </div>
+    <!-- BOTTOM LEFT RIBBON: END COPYING HERE -->
+    <script src="bundle.js"></script>
+    <script src="vendor.js"></script>
+</body>
+</html>
