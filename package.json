@@ -27,8 +27,11 @@
     "@types/node": "^7.0.12",
     "copy-webpack-plugin": "^4.0.1",
     "jquery": "^3.2.1",
-    "ts-loader": "^2.0.3",
-    "typescript": "^2.2.2",
-    "webpack": "^2.3.3"
-  }
+    "ts-loader": "^4.0.0",
+    "typescript": "^3.0.0",
+    "webpack": "^4.7.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.2"
+  },
+  "dependencies": {}
 }
