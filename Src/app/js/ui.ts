@@ -9,6 +9,7 @@ var karel: Karel.Karel;
 var karelDrawer: KarelDrawerMod.KarelDrawer;
 
 $(document).ready(function () {
+    setVersion();
     var canvas = <HTMLCanvasElement>document.getElementById("world");
     var world = new World.World();
     worldDrawer = new WorldDrawer.WorldDrawer(world, canvas);
@@ -35,6 +36,11 @@ $("#draw-button").click(function () {
     worldDrawer.draw();
     karelDrawer.draw();
 });
+function setVersion(){
+    $.ajax({url:"version.html"}).done(function(val){
+        $("#version").text(val);
+    });
+}
 class KarelProgram {
     name: string;
     code: string;
