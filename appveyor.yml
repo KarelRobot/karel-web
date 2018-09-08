@@ -1,15 +1,15 @@
 # environment variables
 environment:
-  nodejs_version: "6"
+  #nodejs_version: "6"
   access_token:
     secure: YwffwDvba/ADlMJbtnOM7cKUqudcbYCt2K74HOtBvscwylmIMSRmrX2VKc+fuNjN
 # scripts that run after cloning repository
 install:
   # install node 
-  - ps: Install-Product node $Env:nodejs_version
-  - npm install -g npm
+  #- ps: Install-Product node $Env:nodejs_version
+  #- npm install -g npm
   - npm install -g webpack  
-  
+  - npm install -g webpack-cli
 # scripts to run before build
 # Post-install test scripts.
 test_script:
