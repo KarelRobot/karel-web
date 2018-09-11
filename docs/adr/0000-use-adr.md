@@ -1,3 +1,6 @@
+# Title
+Using ADR for keeping architecture decisions.
+
 # Status
 Accepted
 
@@ -11,6 +14,7 @@ Use Lightweight Architecture Decision Records
 When there are a lot of decisions over time, it would be difficult to search
 
 # Alternatives
+ 
 | Title         | Pros      | Cons |
-|:-------------:|:-----------:|:-----:|
-| Use GitHub wiki | Easy to edit | Cannot version with code <br/> Cant breanch |
+|:-------------|:-----------|-----|
+| Use GitHub wiki | Easy to edit | `Cannot version with code` <br/> `Can't branch wit ADR` |
