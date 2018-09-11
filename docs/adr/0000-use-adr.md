@@ -11,3 +11,6 @@ Use Lightweight Architecture Decision Records
 When there are a lot of decisions over time, it would be difficult to search
 
 # Alternatives
+| Title         | Pros      | Cons |
+| -------------|-----------| -----:|
+| Use GitHub wiki | `facebook-messenger`<br/>`skype`| `Cannot version with code` <br/>`Cant breanch` |
