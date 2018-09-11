@@ -1,3 +1,6 @@
+# Title
+Bundling and minification.
+
 # Status
 Accepted
 
@@ -13,4 +16,4 @@ Webpack is third party. May or may not be maintained in future.
 # Alternatives
 | Title         | Pros      | Cons |
 |:-------------:|:-----------:|:-----:|
-| Write custom tool | Own tool | Has to maintain <br/> High effort |
+| Write custom tool | Own tool | `Has to maintain` <br/> `High effort` |
