@@ -32,7 +32,7 @@ on_success:
   - git config --global user.name "joymon"
   - git checkout master
   - if not exist "docs" md docs
-  - Copy-Item docs\adr -Destination dist -Recurse -force
+  - ps: Copy-Item docs\adr -Destination dist -Recurse -force
   - rd /s /q docs
   - ps: New-Item -ItemType Directory -Force docs
   - ps: Copy-Item dist\* docs -recurse
