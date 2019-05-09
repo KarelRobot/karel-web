@@ -8,6 +8,12 @@
 
 Source code of Karel robot. 
 
+# How to run
+- Restore packages - NPM Install
+- Build - NPM run devBuild
+- To run and open in browser - NPM run start
+
+# Hosting
 Development version hosted at [https://karelrobot.github.io/karel-web/](https://karelrobot.github.io/karel-web/)
 
-This will be hosted in [http://KarelRobot.github.io](http://KarelRobot.github.io)
+Production will be hosted in [http://KarelRobot.github.io](http://KarelRobot.github.io)
