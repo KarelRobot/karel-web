@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - "stable"
+before-install:
+  - npm -v
+before_script:
+  - echo ${TRAVIS_JOB_NUMBER}
+script: npm -v
 deploy:
     - provider: pages
       local_dir: docs/
