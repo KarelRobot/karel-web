@@ -6,12 +6,17 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/27d3e180fd8dcf011503/maintainability)](https://codeclimate.com/github/KarelRobot/karel-web/maintainability)
 [![deps](https://david-dm.org/webpack-contrib/css-loader.svg)](https://david-dm.org/KarelRobot/karel-web)
 [![Deploy Status](https://travis-ci.org/KarelRobot/karel-web.svg)](https://travis-ci.org/KarelRobot/karel-web)
+
 Source code of Karel robot. 
 
 # How to run
 - Restore packages - NPM Install
 - Build - NPM run devBuild
 - To run and open in browser - NPM run start
+
+# Deploy to production
+- Create a release in GitHub
+- TravisCI will do the deploy to production GitHub pages repo
 
 # Hosting
 Development version hosted at [https://karelrobot.github.io/karel-web/](https://karelrobot.github.io/karel-web/)
