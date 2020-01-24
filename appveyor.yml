@@ -21,7 +21,7 @@ test_script:
   - webpack -p
 
 skip_commits:
-  message: /\[skip ci\]/
+  message: /\[deploy ci\]/
   
 artifacts:
   - path: dist
@@ -40,7 +40,7 @@ on_success:
   - git status
   - git add docs
   - git status
-  - git commit -m "[skip ci]" -- docs 
+  - git commit -m "[deploy ci]" -- docs 
   - git status
   - git push origin master 
 # Don't actually build.
