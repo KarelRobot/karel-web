@@ -1,4 +1,4 @@
-if: tag IS present OR commit_message != "[skip ci]" OR tag = true
+if: tag IS present OR commit_message = "[skip ci]" OR tag = true
 language: node_js
 node_js:
   - "stable"
