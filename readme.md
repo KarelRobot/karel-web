@@ -12,9 +12,12 @@ Deploy - [![Deploy Status](https://travis-ci.org/KarelRobot/karel-web.svg)](http
 Source code of Karel robot. 
 
 # How to run
-- Restore packages - NPM Install
-- Build - NPM run devBuild
-- To run and open in browser - NPM run start
+- Restore packages
+  - `npm install`
+- Build
+  - `npm run devBuild`
+- To run and open in browser
+  - `npm run start`
 
 # Deploy to production
 - Create a release in GitHub
