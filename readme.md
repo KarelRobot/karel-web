@@ -24,6 +24,6 @@ Source code of Karel robot.
 - TravisCI will do the deploy to production GitHub pages repo
 
 # Hosting
-Development version hosted at [https://karelrobot.github.io/karel-web/](https://karelrobot.github.io/karel-web/)
+Development - [https://karelrobot.github.io/karel-web/](https://karelrobot.github.io/karel-web/)
 
-Production will be hosted in [http://KarelRobot.github.io](http://KarelRobot.github.io)
+Production - [http://KarelRobot.github.io](http://KarelRobot.github.io)
