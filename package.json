@@ -27,12 +27,12 @@
   "homepage": "https://github.com/KarelRobot/karel-web#readme",
   "devDependencies": {
     "@types/node": "^7.0.12",
-    "copy-webpack-plugin": "^5.1.2",
+    "copy-webpack-plugin": "^11.0.0",
     "jquery": "^3.5.0",
-    "ts-loader": "^4.0.0",
+    "ts-loader": "^9.4.2",
     "typescript": "^3.0.0",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.1.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {}
